@@ -3,7 +3,7 @@ import { resolve } from "node:path"
 export default defineNuxtConfig({
   modules: ["@hebilicious/authjs-nuxt"],
   nitro: {
-    preset: "cloudflare-pages"
+    preset: "vercel-edge"
   },
   runtimeConfig: {
     authJs: {
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     },
     public: {
       authJs: {
-        baseUrl: "https://authjs-cookie.pages.dev",
+        baseUrl: "https://nuxt-authjs-google.vercel.app",
         verifyClientOnEveryRequest: true
       }
     }
