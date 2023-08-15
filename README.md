@@ -1,63 +1,13 @@
-# Nuxt 3 Minimal Starter
+# Example of Nuxt with AuthJs Nuxt
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+- Cloudflare Pages : `https://authjs-cookie.pages.dev`
+- Vercel Edge : `https://authjs-cookie.pages.dev`
 
-## Setup
+To deploy to Cloudflare Pages, you need to set the following environment variables:
 
-Make sure to install the dependencies:
+- NUXT_GOOGLE_CLIENT_ID
+- NUXT_GOOGLE_CLIENT_SECRET
 
-```bash
-# npm
-npm install
+There's an example `nuxt.config.cfp.ts` that you can use for your own `nuxt.config.ts`.
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Make sure the `baseUrl` matches your deployed URL.
